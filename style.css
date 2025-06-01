@@ -82,10 +82,48 @@ button:hover {
     background-color: #e55a5a;
 }
 
+#exportBtn {
+    background-color: #28a745;
+    color: white;
+}
+
+#exportBtn:hover {
+    background-color: #218838;
+}
+
 #output {
     margin-top: 20px;
     font-size: 18px;
     color: #333;
+}
+
+.name-list {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.name-list ul {
+    list-style: none;
+}
+
+.name-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f8f9fa;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.name-list button {
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #ff6b6b;
+}
+
+.name-list button:hover {
+    background-color: #e55a5a;
 }
 
 .toast {
