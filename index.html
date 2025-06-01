@@ -3,26 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nhập Tên</title>
+    <title>Nhập Tên - Giao Diện Đẹp</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h2>Nhập Tên</h2>
-        <input type="text" id="nameInput" placeholder="Nhập tên của bạn">
-        <br>
-        <button onclick="displayName()">Gửi</button>
+        <h1>Chào Mừng Bạn</h1>
+        <div class="input-group">
+            <input type="text" id="nameInput" placeholder="Nhập tên của bạn" autocomplete="off">
+            <button id="submitBtn" onclick="submitName()">Gửi</button>
+            <button id="clearBtn" onclick="clearName()">Xóa</button>
+        </div>
         <p id="output"></p>
+        <div id="toast" class="toast"></div>
     </div>
-    <script>
-        function displayName() {
-            let name = document.getElementById("nameInput").value;
-            if (name.trim() !== "") {
-                document.getElementById("output").innerText = "Xin chào, " + name + "!";
-            } else {
-                document.getElementById("output").innerText = "Vui lòng nhập tên!";
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
