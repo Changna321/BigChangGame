@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nhập Tên - Giao Diện Đẹp</title>
+    <title>Nhập và Xuất Tên</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
-        <h1>Chào Mừng Bạn</h1>
+        <h1>Quản Lý Tên</h1>
         <div class="input-group">
             <input type="text" id="nameInput" placeholder="Nhập tên của bạn" autocomplete="off">
             <button id="submitBtn" onclick="submitName()">Gửi</button>
-            <button id="clearBtn" onclick="clearName()">Xóa</button>
+            <button id="clearBtn" onclick="clearAllNames()">Xóa Tất Cả</button>
+            <button id="exportBtn" onclick="exportNames()">Xuất Tên</button>
         </div>
         <p id="output"></p>
+        <div id="nameList" class="name-list"></div>
         <div id="toast" class="toast"></div>
     </div>
     <script src="script.js"></script>
